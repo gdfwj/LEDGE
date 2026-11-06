@@ -25,7 +25,7 @@ Use **Load example** or **Import configuration** to supply an experiment JSON fi
 |---|---|
 | Network topology | Add, connect, remove, and move devices, routers, and switches. The Inspector edits node/link IDs, device types, profiles, and overrides. |
 | Model deployment | Select models, TP/PP/Single parallelism, ordered workers, controller, split ratios or PP layer counts, and collective policy. |
-| Requests | Edit arrival times, input/output tokens, batch size, and microbatch size; import CSV or JSON request lists. |
+| Requests | Edit arrival times, input/output tokens, batch size, and microbatch size; import CSV or JSON request lists. **Microbatch size should equal or larger than input tokens**|
 | Parameters | Edit the parameter mapping and device/link overrides, or keep the included defaults. |
 
 Click **Validate configuration**, choose **Summary** or **Detailed** logging, and click **Run simulation**. **Cancel run** stops a run; **Details** shows its status.
