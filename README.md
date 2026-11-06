@@ -2,7 +2,7 @@
 
 LEDGE simulates distributed LLM inference from a network topology, model deployments, and a request stream.
 
-## Install and start
+## Quick Start
 
 Requires Python 3.10+ and NumPy. Run these commands from this directory:
 
