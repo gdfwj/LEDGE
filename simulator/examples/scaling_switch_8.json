@@ -1,0 +1,373 @@
+{
+  "schema": 1,
+  "name": "scaling_switch_8",
+  "topology": {
+    "nodes": {
+      "router": {
+        "kind": "router",
+        "name": "router",
+        "position": {
+          "x": 460,
+          "y": 60
+        }
+      },
+      "switch1": {
+        "kind": "switch",
+        "name": "switch1",
+        "position": {
+          "x": 460,
+          "y": 155
+        }
+      },
+      "device1": {
+        "kind": "device",
+        "name": "device1",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 120,
+          "y": 255
+        }
+      },
+      "device2": {
+        "kind": "device",
+        "name": "device2",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 345,
+          "y": 255
+        }
+      },
+      "device3": {
+        "kind": "device",
+        "name": "device3",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 570,
+          "y": 255
+        }
+      },
+      "device4": {
+        "kind": "device",
+        "name": "device4",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 795,
+          "y": 255
+        }
+      },
+      "device5": {
+        "kind": "device",
+        "name": "device5",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 120,
+          "y": 365
+        }
+      },
+      "device6": {
+        "kind": "device",
+        "name": "device6",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 345,
+          "y": 365
+        }
+      },
+      "device7": {
+        "kind": "device",
+        "name": "device7",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 570,
+          "y": 365
+        }
+      },
+      "device8": {
+        "kind": "device",
+        "name": "device8",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 795,
+          "y": 365
+        }
+      }
+    },
+    "links": {
+      "link1": {
+        "endpoints": [
+          "switch1",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "uplink"
+      },
+      "link2": {
+        "endpoints": [
+          "device1",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link3": {
+        "endpoints": [
+          "device2",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link4": {
+        "endpoints": [
+          "device3",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link5": {
+        "endpoints": [
+          "device4",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link6": {
+        "endpoints": [
+          "device5",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link7": {
+        "endpoints": [
+          "device6",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link8": {
+        "endpoints": [
+          "device7",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link9": {
+        "endpoints": [
+          "device8",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      }
+    },
+    "adjacency": {
+      "router": [
+        {
+          "node": "switch1",
+          "link": "link1"
+        }
+      ],
+      "switch1": [
+        {
+          "node": "router",
+          "link": "link1"
+        },
+        {
+          "node": "device1",
+          "link": "link2"
+        },
+        {
+          "node": "device2",
+          "link": "link3"
+        },
+        {
+          "node": "device3",
+          "link": "link4"
+        },
+        {
+          "node": "device4",
+          "link": "link5"
+        },
+        {
+          "node": "device5",
+          "link": "link6"
+        },
+        {
+          "node": "device6",
+          "link": "link7"
+        },
+        {
+          "node": "device7",
+          "link": "link8"
+        },
+        {
+          "node": "device8",
+          "link": "link9"
+        }
+      ],
+      "device1": [
+        {
+          "node": "switch1",
+          "link": "link2"
+        }
+      ],
+      "device2": [
+        {
+          "node": "switch1",
+          "link": "link3"
+        }
+      ],
+      "device3": [
+        {
+          "node": "switch1",
+          "link": "link4"
+        }
+      ],
+      "device4": [
+        {
+          "node": "switch1",
+          "link": "link5"
+        }
+      ],
+      "device5": [
+        {
+          "node": "switch1",
+          "link": "link6"
+        }
+      ],
+      "device6": [
+        {
+          "node": "switch1",
+          "link": "link7"
+        }
+      ],
+      "device7": [
+        {
+          "node": "switch1",
+          "link": "link8"
+        }
+      ],
+      "device8": [
+        {
+          "node": "switch1",
+          "link": "link9"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "group1",
+      "name": "group1",
+      "model": "Qwen14BFP16",
+      "devices": [
+        "device1",
+        "device2",
+        "device3",
+        "device4",
+        "device5",
+        "device6",
+        "device7",
+        "device8"
+      ],
+      "controller": "device1",
+      "parallelism": "tp",
+      "split": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "scheduling": "fcfs",
+      "execution": {
+        "pp_rule": "synchronous_cohort"
+      },
+      "color": "#22d3ee"
+    }
+  ],
+  "requests": [
+    {
+      "id": "request1",
+      "instance": "group1",
+      "arrival_s": 0,
+      "input_tokens": 128,
+      "output_tokens": 64,
+      "batch": 1,
+      "microbatch_tokens": 128
+    }
+  ],
+  "parameters": {
+    "baseline_files": {
+      "Q8_0": "../data/parameters/Q8_0.json",
+      "F16": "../data/parameters/F16.json"
+    },
+    "interference_file": "../data/parameters/interference.json",
+    "device_types": {
+      "RPi4": {
+        "source_class": "RPi4"
+      },
+      "RPi5": {
+        "source_class": "RPi5"
+      },
+      "Orin": {
+        "source_class": "Orin"
+      },
+      "Xavier": {
+        "source_class": "Xavier"
+      }
+    },
+    "device_overrides": {},
+    "link_types": {
+      "access_1g": {
+        "baseline_ref": "uplink",
+        "service_ref": "uplink",
+        "parameters": {
+          "Q8_0": {
+            "b_s_per_GB": 8.0
+          },
+          "F16": {
+            "b_s_per_GB": 8.0
+          }
+        },
+        "service_parameters": {
+          "b_s_per_GB": 8.0
+        }
+      },
+      "uplink": {
+        "baseline_ref": "uplink",
+        "service_ref": "uplink",
+        "parameters": {
+          "Q8_0": {
+            "b_s_per_GB": 8.0
+          },
+          "F16": {
+            "b_s_per_GB": 8.0
+          }
+        },
+        "service_parameters": {
+          "b_s_per_GB": 8.0
+        }
+      }
+    },
+    "link_overrides": {},
+    "shared_links": "auto"
+  }
+}

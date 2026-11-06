@@ -1,0 +1,132 @@
+{
+  "Qwen4BQ8": {
+    "name": "Qwen 4B · Q8",
+    "quantization": "Q8_0",
+    "model_id": "Qwen4BQ8",
+    "structure": {
+      "name": "Qwen3-4B",
+      "layers": 36,
+      "hidden_size": 2560,
+      "intermediate_size": 9728,
+      "attention_heads": 32,
+      "kv_heads": 8,
+      "head_dim": 128,
+      "vocab_size": 151936,
+      "tie_word_embeddings": true,
+      "quantization": "Q8_0",
+      "activation_bytes": 4,
+      "kv_bytes": 2,
+      "attention_split_alignment": 512,
+      "ffn_split_alignment": 128
+    }
+  },
+  "Qwen4BFP16": {
+    "name": "Qwen 4B · FP16",
+    "quantization": "F16",
+    "model_id": "Qwen4BFP16",
+    "structure": {
+      "name": "Qwen3-4B",
+      "layers": 36,
+      "hidden_size": 2560,
+      "intermediate_size": 9728,
+      "attention_heads": 32,
+      "kv_heads": 8,
+      "head_dim": 128,
+      "vocab_size": 151936,
+      "tie_word_embeddings": true,
+      "quantization": "F16",
+      "activation_bytes": 4,
+      "kv_bytes": 2,
+      "attention_split_alignment": 512,
+      "ffn_split_alignment": 128
+    }
+  },
+  "Qwen8BQ8": {
+    "name": "Qwen 8B · Q8",
+    "quantization": "Q8_0",
+    "model_id": "Qwen8BQ8",
+    "structure": {
+      "name": "Qwen3-8B",
+      "parameter_count": 8190735360,
+      "layers": 36,
+      "hidden_size": 4096,
+      "intermediate_size": 12288,
+      "attention_heads": 32,
+      "kv_heads": 8,
+      "head_dim": 128,
+      "vocab_size": 151936,
+      "tie_word_embeddings": false,
+      "quantization": "Q8_0",
+      "activation_bytes": 4,
+      "kv_bytes": 2,
+      "attention_split_alignment": 512,
+      "ffn_split_alignment": 128
+    }
+  },
+  "Qwen8BFP16": {
+    "name": "Qwen 8B · FP16",
+    "quantization": "F16",
+    "model_id": "Qwen8BFP16",
+    "structure": {
+      "name": "Qwen3-8B",
+      "parameter_count": 8190735360,
+      "layers": 36,
+      "hidden_size": 4096,
+      "intermediate_size": 12288,
+      "attention_heads": 32,
+      "kv_heads": 8,
+      "head_dim": 128,
+      "vocab_size": 151936,
+      "tie_word_embeddings": false,
+      "quantization": "F16",
+      "activation_bytes": 4,
+      "kv_bytes": 2,
+      "attention_split_alignment": 512,
+      "ffn_split_alignment": 128
+    }
+  },
+  "Qwen14BQ8": {
+    "name": "Qwen 14B · Q8",
+    "quantization": "Q8_0",
+    "model_id": "Qwen14BQ8",
+    "structure": {
+      "name": "Qwen3-14B",
+      "parameter_count": 14768307200,
+      "layers": 40,
+      "hidden_size": 5120,
+      "intermediate_size": 17408,
+      "attention_heads": 40,
+      "kv_heads": 8,
+      "head_dim": 128,
+      "vocab_size": 151936,
+      "tie_word_embeddings": false,
+      "quantization": "Q8_0",
+      "activation_bytes": 4,
+      "kv_bytes": 2,
+      "attention_split_alignment": 640,
+      "ffn_split_alignment": 128
+    }
+  },
+  "Qwen14BFP16": {
+    "name": "Qwen 14B · FP16",
+    "quantization": "F16",
+    "model_id": "Qwen14BFP16",
+    "structure": {
+      "name": "Qwen3-14B",
+      "parameter_count": 14768307200,
+      "layers": 40,
+      "hidden_size": 5120,
+      "intermediate_size": 17408,
+      "attention_heads": 40,
+      "kv_heads": 8,
+      "head_dim": 128,
+      "vocab_size": 151936,
+      "tie_word_embeddings": false,
+      "quantization": "F16",
+      "activation_bytes": 4,
+      "kv_bytes": 2,
+      "attention_split_alignment": 640,
+      "ffn_split_alignment": 128
+    }
+  }
+}

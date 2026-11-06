@@ -1,0 +1,2236 @@
+{
+  "schema": 1,
+  "name": "scaling_switch_64",
+  "topology": {
+    "nodes": {
+      "router": {
+        "kind": "router",
+        "name": "router",
+        "position": {
+          "x": 765,
+          "y": 45
+        }
+      },
+      "switch1": {
+        "kind": "switch",
+        "name": "switch1",
+        "position": {
+          "x": 100,
+          "y": 135
+        }
+      },
+      "switch2": {
+        "kind": "switch",
+        "name": "switch2",
+        "position": {
+          "x": 290,
+          "y": 135
+        }
+      },
+      "switch3": {
+        "kind": "switch",
+        "name": "switch3",
+        "position": {
+          "x": 480,
+          "y": 135
+        }
+      },
+      "switch4": {
+        "kind": "switch",
+        "name": "switch4",
+        "position": {
+          "x": 670,
+          "y": 135
+        }
+      },
+      "switch5": {
+        "kind": "switch",
+        "name": "switch5",
+        "position": {
+          "x": 860,
+          "y": 135
+        }
+      },
+      "switch6": {
+        "kind": "switch",
+        "name": "switch6",
+        "position": {
+          "x": 1050,
+          "y": 135
+        }
+      },
+      "switch7": {
+        "kind": "switch",
+        "name": "switch7",
+        "position": {
+          "x": 1240,
+          "y": 135
+        }
+      },
+      "switch8": {
+        "kind": "switch",
+        "name": "switch8",
+        "position": {
+          "x": 1430,
+          "y": 135
+        }
+      },
+      "device1": {
+        "kind": "device",
+        "name": "device1",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 100,
+          "y": 225
+        }
+      },
+      "device2": {
+        "kind": "device",
+        "name": "device2",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 100,
+          "y": 295
+        }
+      },
+      "device3": {
+        "kind": "device",
+        "name": "device3",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 100,
+          "y": 365
+        }
+      },
+      "device4": {
+        "kind": "device",
+        "name": "device4",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 100,
+          "y": 435
+        }
+      },
+      "device5": {
+        "kind": "device",
+        "name": "device5",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 100,
+          "y": 505
+        }
+      },
+      "device6": {
+        "kind": "device",
+        "name": "device6",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 100,
+          "y": 575
+        }
+      },
+      "device7": {
+        "kind": "device",
+        "name": "device7",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 100,
+          "y": 645
+        }
+      },
+      "device8": {
+        "kind": "device",
+        "name": "device8",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 100,
+          "y": 715
+        }
+      },
+      "device9": {
+        "kind": "device",
+        "name": "device9",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 290,
+          "y": 225
+        }
+      },
+      "device10": {
+        "kind": "device",
+        "name": "device10",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 290,
+          "y": 295
+        }
+      },
+      "device11": {
+        "kind": "device",
+        "name": "device11",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 290,
+          "y": 365
+        }
+      },
+      "device12": {
+        "kind": "device",
+        "name": "device12",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 290,
+          "y": 435
+        }
+      },
+      "device13": {
+        "kind": "device",
+        "name": "device13",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 290,
+          "y": 505
+        }
+      },
+      "device14": {
+        "kind": "device",
+        "name": "device14",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 290,
+          "y": 575
+        }
+      },
+      "device15": {
+        "kind": "device",
+        "name": "device15",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 290,
+          "y": 645
+        }
+      },
+      "device16": {
+        "kind": "device",
+        "name": "device16",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 290,
+          "y": 715
+        }
+      },
+      "device17": {
+        "kind": "device",
+        "name": "device17",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 480,
+          "y": 225
+        }
+      },
+      "device18": {
+        "kind": "device",
+        "name": "device18",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 480,
+          "y": 295
+        }
+      },
+      "device19": {
+        "kind": "device",
+        "name": "device19",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 480,
+          "y": 365
+        }
+      },
+      "device20": {
+        "kind": "device",
+        "name": "device20",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 480,
+          "y": 435
+        }
+      },
+      "device21": {
+        "kind": "device",
+        "name": "device21",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 480,
+          "y": 505
+        }
+      },
+      "device22": {
+        "kind": "device",
+        "name": "device22",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 480,
+          "y": 575
+        }
+      },
+      "device23": {
+        "kind": "device",
+        "name": "device23",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 480,
+          "y": 645
+        }
+      },
+      "device24": {
+        "kind": "device",
+        "name": "device24",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 480,
+          "y": 715
+        }
+      },
+      "device25": {
+        "kind": "device",
+        "name": "device25",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 670,
+          "y": 225
+        }
+      },
+      "device26": {
+        "kind": "device",
+        "name": "device26",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 670,
+          "y": 295
+        }
+      },
+      "device27": {
+        "kind": "device",
+        "name": "device27",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 670,
+          "y": 365
+        }
+      },
+      "device28": {
+        "kind": "device",
+        "name": "device28",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 670,
+          "y": 435
+        }
+      },
+      "device29": {
+        "kind": "device",
+        "name": "device29",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 670,
+          "y": 505
+        }
+      },
+      "device30": {
+        "kind": "device",
+        "name": "device30",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 670,
+          "y": 575
+        }
+      },
+      "device31": {
+        "kind": "device",
+        "name": "device31",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 670,
+          "y": 645
+        }
+      },
+      "device32": {
+        "kind": "device",
+        "name": "device32",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 670,
+          "y": 715
+        }
+      },
+      "device33": {
+        "kind": "device",
+        "name": "device33",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 860,
+          "y": 225
+        }
+      },
+      "device34": {
+        "kind": "device",
+        "name": "device34",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 860,
+          "y": 295
+        }
+      },
+      "device35": {
+        "kind": "device",
+        "name": "device35",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 860,
+          "y": 365
+        }
+      },
+      "device36": {
+        "kind": "device",
+        "name": "device36",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 860,
+          "y": 435
+        }
+      },
+      "device37": {
+        "kind": "device",
+        "name": "device37",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 860,
+          "y": 505
+        }
+      },
+      "device38": {
+        "kind": "device",
+        "name": "device38",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 860,
+          "y": 575
+        }
+      },
+      "device39": {
+        "kind": "device",
+        "name": "device39",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 860,
+          "y": 645
+        }
+      },
+      "device40": {
+        "kind": "device",
+        "name": "device40",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 860,
+          "y": 715
+        }
+      },
+      "device41": {
+        "kind": "device",
+        "name": "device41",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1050,
+          "y": 225
+        }
+      },
+      "device42": {
+        "kind": "device",
+        "name": "device42",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1050,
+          "y": 295
+        }
+      },
+      "device43": {
+        "kind": "device",
+        "name": "device43",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1050,
+          "y": 365
+        }
+      },
+      "device44": {
+        "kind": "device",
+        "name": "device44",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1050,
+          "y": 435
+        }
+      },
+      "device45": {
+        "kind": "device",
+        "name": "device45",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1050,
+          "y": 505
+        }
+      },
+      "device46": {
+        "kind": "device",
+        "name": "device46",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1050,
+          "y": 575
+        }
+      },
+      "device47": {
+        "kind": "device",
+        "name": "device47",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1050,
+          "y": 645
+        }
+      },
+      "device48": {
+        "kind": "device",
+        "name": "device48",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1050,
+          "y": 715
+        }
+      },
+      "device49": {
+        "kind": "device",
+        "name": "device49",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1240,
+          "y": 225
+        }
+      },
+      "device50": {
+        "kind": "device",
+        "name": "device50",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1240,
+          "y": 295
+        }
+      },
+      "device51": {
+        "kind": "device",
+        "name": "device51",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1240,
+          "y": 365
+        }
+      },
+      "device52": {
+        "kind": "device",
+        "name": "device52",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1240,
+          "y": 435
+        }
+      },
+      "device53": {
+        "kind": "device",
+        "name": "device53",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1240,
+          "y": 505
+        }
+      },
+      "device54": {
+        "kind": "device",
+        "name": "device54",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1240,
+          "y": 575
+        }
+      },
+      "device55": {
+        "kind": "device",
+        "name": "device55",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1240,
+          "y": 645
+        }
+      },
+      "device56": {
+        "kind": "device",
+        "name": "device56",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1240,
+          "y": 715
+        }
+      },
+      "device57": {
+        "kind": "device",
+        "name": "device57",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1430,
+          "y": 225
+        }
+      },
+      "device58": {
+        "kind": "device",
+        "name": "device58",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1430,
+          "y": 295
+        }
+      },
+      "device59": {
+        "kind": "device",
+        "name": "device59",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1430,
+          "y": 365
+        }
+      },
+      "device60": {
+        "kind": "device",
+        "name": "device60",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1430,
+          "y": 435
+        }
+      },
+      "device61": {
+        "kind": "device",
+        "name": "device61",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1430,
+          "y": 505
+        }
+      },
+      "device62": {
+        "kind": "device",
+        "name": "device62",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1430,
+          "y": 575
+        }
+      },
+      "device63": {
+        "kind": "device",
+        "name": "device63",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1430,
+          "y": 645
+        }
+      },
+      "device64": {
+        "kind": "device",
+        "name": "device64",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 1430,
+          "y": 715
+        }
+      }
+    },
+    "links": {
+      "link1": {
+        "endpoints": [
+          "switch1",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "uplink"
+      },
+      "link2": {
+        "endpoints": [
+          "switch2",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "uplink"
+      },
+      "link3": {
+        "endpoints": [
+          "switch3",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "uplink"
+      },
+      "link4": {
+        "endpoints": [
+          "switch4",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "uplink"
+      },
+      "link5": {
+        "endpoints": [
+          "switch5",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "uplink"
+      },
+      "link6": {
+        "endpoints": [
+          "switch6",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "uplink"
+      },
+      "link7": {
+        "endpoints": [
+          "switch7",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "uplink"
+      },
+      "link8": {
+        "endpoints": [
+          "switch8",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "uplink"
+      },
+      "link9": {
+        "endpoints": [
+          "device1",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link10": {
+        "endpoints": [
+          "device2",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link11": {
+        "endpoints": [
+          "device3",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link12": {
+        "endpoints": [
+          "device4",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link13": {
+        "endpoints": [
+          "device5",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link14": {
+        "endpoints": [
+          "device6",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link15": {
+        "endpoints": [
+          "device7",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link16": {
+        "endpoints": [
+          "device8",
+          "switch1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link17": {
+        "endpoints": [
+          "device9",
+          "switch2"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link18": {
+        "endpoints": [
+          "device10",
+          "switch2"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link19": {
+        "endpoints": [
+          "device11",
+          "switch2"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link20": {
+        "endpoints": [
+          "device12",
+          "switch2"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link21": {
+        "endpoints": [
+          "device13",
+          "switch2"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link22": {
+        "endpoints": [
+          "device14",
+          "switch2"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link23": {
+        "endpoints": [
+          "device15",
+          "switch2"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link24": {
+        "endpoints": [
+          "device16",
+          "switch2"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link25": {
+        "endpoints": [
+          "device17",
+          "switch3"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link26": {
+        "endpoints": [
+          "device18",
+          "switch3"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link27": {
+        "endpoints": [
+          "device19",
+          "switch3"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link28": {
+        "endpoints": [
+          "device20",
+          "switch3"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link29": {
+        "endpoints": [
+          "device21",
+          "switch3"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link30": {
+        "endpoints": [
+          "device22",
+          "switch3"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link31": {
+        "endpoints": [
+          "device23",
+          "switch3"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link32": {
+        "endpoints": [
+          "device24",
+          "switch3"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link33": {
+        "endpoints": [
+          "device25",
+          "switch4"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link34": {
+        "endpoints": [
+          "device26",
+          "switch4"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link35": {
+        "endpoints": [
+          "device27",
+          "switch4"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link36": {
+        "endpoints": [
+          "device28",
+          "switch4"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link37": {
+        "endpoints": [
+          "device29",
+          "switch4"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link38": {
+        "endpoints": [
+          "device30",
+          "switch4"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link39": {
+        "endpoints": [
+          "device31",
+          "switch4"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link40": {
+        "endpoints": [
+          "device32",
+          "switch4"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link41": {
+        "endpoints": [
+          "device33",
+          "switch5"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link42": {
+        "endpoints": [
+          "device34",
+          "switch5"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link43": {
+        "endpoints": [
+          "device35",
+          "switch5"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link44": {
+        "endpoints": [
+          "device36",
+          "switch5"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link45": {
+        "endpoints": [
+          "device37",
+          "switch5"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link46": {
+        "endpoints": [
+          "device38",
+          "switch5"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link47": {
+        "endpoints": [
+          "device39",
+          "switch5"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link48": {
+        "endpoints": [
+          "device40",
+          "switch5"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link49": {
+        "endpoints": [
+          "device41",
+          "switch6"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link50": {
+        "endpoints": [
+          "device42",
+          "switch6"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link51": {
+        "endpoints": [
+          "device43",
+          "switch6"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link52": {
+        "endpoints": [
+          "device44",
+          "switch6"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link53": {
+        "endpoints": [
+          "device45",
+          "switch6"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link54": {
+        "endpoints": [
+          "device46",
+          "switch6"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link55": {
+        "endpoints": [
+          "device47",
+          "switch6"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link56": {
+        "endpoints": [
+          "device48",
+          "switch6"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link57": {
+        "endpoints": [
+          "device49",
+          "switch7"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link58": {
+        "endpoints": [
+          "device50",
+          "switch7"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link59": {
+        "endpoints": [
+          "device51",
+          "switch7"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link60": {
+        "endpoints": [
+          "device52",
+          "switch7"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link61": {
+        "endpoints": [
+          "device53",
+          "switch7"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link62": {
+        "endpoints": [
+          "device54",
+          "switch7"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link63": {
+        "endpoints": [
+          "device55",
+          "switch7"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link64": {
+        "endpoints": [
+          "device56",
+          "switch7"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link65": {
+        "endpoints": [
+          "device57",
+          "switch8"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link66": {
+        "endpoints": [
+          "device58",
+          "switch8"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link67": {
+        "endpoints": [
+          "device59",
+          "switch8"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link68": {
+        "endpoints": [
+          "device60",
+          "switch8"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link69": {
+        "endpoints": [
+          "device61",
+          "switch8"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link70": {
+        "endpoints": [
+          "device62",
+          "switch8"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link71": {
+        "endpoints": [
+          "device63",
+          "switch8"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      },
+      "link72": {
+        "endpoints": [
+          "device64",
+          "switch8"
+        ],
+        "duplex": "full",
+        "parameter_profile": "access_1g"
+      }
+    },
+    "adjacency": {
+      "router": [
+        {
+          "node": "switch1",
+          "link": "link1"
+        },
+        {
+          "node": "switch2",
+          "link": "link2"
+        },
+        {
+          "node": "switch3",
+          "link": "link3"
+        },
+        {
+          "node": "switch4",
+          "link": "link4"
+        },
+        {
+          "node": "switch5",
+          "link": "link5"
+        },
+        {
+          "node": "switch6",
+          "link": "link6"
+        },
+        {
+          "node": "switch7",
+          "link": "link7"
+        },
+        {
+          "node": "switch8",
+          "link": "link8"
+        }
+      ],
+      "switch1": [
+        {
+          "node": "router",
+          "link": "link1"
+        },
+        {
+          "node": "device1",
+          "link": "link9"
+        },
+        {
+          "node": "device2",
+          "link": "link10"
+        },
+        {
+          "node": "device3",
+          "link": "link11"
+        },
+        {
+          "node": "device4",
+          "link": "link12"
+        },
+        {
+          "node": "device5",
+          "link": "link13"
+        },
+        {
+          "node": "device6",
+          "link": "link14"
+        },
+        {
+          "node": "device7",
+          "link": "link15"
+        },
+        {
+          "node": "device8",
+          "link": "link16"
+        }
+      ],
+      "switch2": [
+        {
+          "node": "router",
+          "link": "link2"
+        },
+        {
+          "node": "device9",
+          "link": "link17"
+        },
+        {
+          "node": "device10",
+          "link": "link18"
+        },
+        {
+          "node": "device11",
+          "link": "link19"
+        },
+        {
+          "node": "device12",
+          "link": "link20"
+        },
+        {
+          "node": "device13",
+          "link": "link21"
+        },
+        {
+          "node": "device14",
+          "link": "link22"
+        },
+        {
+          "node": "device15",
+          "link": "link23"
+        },
+        {
+          "node": "device16",
+          "link": "link24"
+        }
+      ],
+      "switch3": [
+        {
+          "node": "router",
+          "link": "link3"
+        },
+        {
+          "node": "device17",
+          "link": "link25"
+        },
+        {
+          "node": "device18",
+          "link": "link26"
+        },
+        {
+          "node": "device19",
+          "link": "link27"
+        },
+        {
+          "node": "device20",
+          "link": "link28"
+        },
+        {
+          "node": "device21",
+          "link": "link29"
+        },
+        {
+          "node": "device22",
+          "link": "link30"
+        },
+        {
+          "node": "device23",
+          "link": "link31"
+        },
+        {
+          "node": "device24",
+          "link": "link32"
+        }
+      ],
+      "switch4": [
+        {
+          "node": "router",
+          "link": "link4"
+        },
+        {
+          "node": "device25",
+          "link": "link33"
+        },
+        {
+          "node": "device26",
+          "link": "link34"
+        },
+        {
+          "node": "device27",
+          "link": "link35"
+        },
+        {
+          "node": "device28",
+          "link": "link36"
+        },
+        {
+          "node": "device29",
+          "link": "link37"
+        },
+        {
+          "node": "device30",
+          "link": "link38"
+        },
+        {
+          "node": "device31",
+          "link": "link39"
+        },
+        {
+          "node": "device32",
+          "link": "link40"
+        }
+      ],
+      "switch5": [
+        {
+          "node": "router",
+          "link": "link5"
+        },
+        {
+          "node": "device33",
+          "link": "link41"
+        },
+        {
+          "node": "device34",
+          "link": "link42"
+        },
+        {
+          "node": "device35",
+          "link": "link43"
+        },
+        {
+          "node": "device36",
+          "link": "link44"
+        },
+        {
+          "node": "device37",
+          "link": "link45"
+        },
+        {
+          "node": "device38",
+          "link": "link46"
+        },
+        {
+          "node": "device39",
+          "link": "link47"
+        },
+        {
+          "node": "device40",
+          "link": "link48"
+        }
+      ],
+      "switch6": [
+        {
+          "node": "router",
+          "link": "link6"
+        },
+        {
+          "node": "device41",
+          "link": "link49"
+        },
+        {
+          "node": "device42",
+          "link": "link50"
+        },
+        {
+          "node": "device43",
+          "link": "link51"
+        },
+        {
+          "node": "device44",
+          "link": "link52"
+        },
+        {
+          "node": "device45",
+          "link": "link53"
+        },
+        {
+          "node": "device46",
+          "link": "link54"
+        },
+        {
+          "node": "device47",
+          "link": "link55"
+        },
+        {
+          "node": "device48",
+          "link": "link56"
+        }
+      ],
+      "switch7": [
+        {
+          "node": "router",
+          "link": "link7"
+        },
+        {
+          "node": "device49",
+          "link": "link57"
+        },
+        {
+          "node": "device50",
+          "link": "link58"
+        },
+        {
+          "node": "device51",
+          "link": "link59"
+        },
+        {
+          "node": "device52",
+          "link": "link60"
+        },
+        {
+          "node": "device53",
+          "link": "link61"
+        },
+        {
+          "node": "device54",
+          "link": "link62"
+        },
+        {
+          "node": "device55",
+          "link": "link63"
+        },
+        {
+          "node": "device56",
+          "link": "link64"
+        }
+      ],
+      "switch8": [
+        {
+          "node": "router",
+          "link": "link8"
+        },
+        {
+          "node": "device57",
+          "link": "link65"
+        },
+        {
+          "node": "device58",
+          "link": "link66"
+        },
+        {
+          "node": "device59",
+          "link": "link67"
+        },
+        {
+          "node": "device60",
+          "link": "link68"
+        },
+        {
+          "node": "device61",
+          "link": "link69"
+        },
+        {
+          "node": "device62",
+          "link": "link70"
+        },
+        {
+          "node": "device63",
+          "link": "link71"
+        },
+        {
+          "node": "device64",
+          "link": "link72"
+        }
+      ],
+      "device1": [
+        {
+          "node": "switch1",
+          "link": "link9"
+        }
+      ],
+      "device2": [
+        {
+          "node": "switch1",
+          "link": "link10"
+        }
+      ],
+      "device3": [
+        {
+          "node": "switch1",
+          "link": "link11"
+        }
+      ],
+      "device4": [
+        {
+          "node": "switch1",
+          "link": "link12"
+        }
+      ],
+      "device5": [
+        {
+          "node": "switch1",
+          "link": "link13"
+        }
+      ],
+      "device6": [
+        {
+          "node": "switch1",
+          "link": "link14"
+        }
+      ],
+      "device7": [
+        {
+          "node": "switch1",
+          "link": "link15"
+        }
+      ],
+      "device8": [
+        {
+          "node": "switch1",
+          "link": "link16"
+        }
+      ],
+      "device9": [
+        {
+          "node": "switch2",
+          "link": "link17"
+        }
+      ],
+      "device10": [
+        {
+          "node": "switch2",
+          "link": "link18"
+        }
+      ],
+      "device11": [
+        {
+          "node": "switch2",
+          "link": "link19"
+        }
+      ],
+      "device12": [
+        {
+          "node": "switch2",
+          "link": "link20"
+        }
+      ],
+      "device13": [
+        {
+          "node": "switch2",
+          "link": "link21"
+        }
+      ],
+      "device14": [
+        {
+          "node": "switch2",
+          "link": "link22"
+        }
+      ],
+      "device15": [
+        {
+          "node": "switch2",
+          "link": "link23"
+        }
+      ],
+      "device16": [
+        {
+          "node": "switch2",
+          "link": "link24"
+        }
+      ],
+      "device17": [
+        {
+          "node": "switch3",
+          "link": "link25"
+        }
+      ],
+      "device18": [
+        {
+          "node": "switch3",
+          "link": "link26"
+        }
+      ],
+      "device19": [
+        {
+          "node": "switch3",
+          "link": "link27"
+        }
+      ],
+      "device20": [
+        {
+          "node": "switch3",
+          "link": "link28"
+        }
+      ],
+      "device21": [
+        {
+          "node": "switch3",
+          "link": "link29"
+        }
+      ],
+      "device22": [
+        {
+          "node": "switch3",
+          "link": "link30"
+        }
+      ],
+      "device23": [
+        {
+          "node": "switch3",
+          "link": "link31"
+        }
+      ],
+      "device24": [
+        {
+          "node": "switch3",
+          "link": "link32"
+        }
+      ],
+      "device25": [
+        {
+          "node": "switch4",
+          "link": "link33"
+        }
+      ],
+      "device26": [
+        {
+          "node": "switch4",
+          "link": "link34"
+        }
+      ],
+      "device27": [
+        {
+          "node": "switch4",
+          "link": "link35"
+        }
+      ],
+      "device28": [
+        {
+          "node": "switch4",
+          "link": "link36"
+        }
+      ],
+      "device29": [
+        {
+          "node": "switch4",
+          "link": "link37"
+        }
+      ],
+      "device30": [
+        {
+          "node": "switch4",
+          "link": "link38"
+        }
+      ],
+      "device31": [
+        {
+          "node": "switch4",
+          "link": "link39"
+        }
+      ],
+      "device32": [
+        {
+          "node": "switch4",
+          "link": "link40"
+        }
+      ],
+      "device33": [
+        {
+          "node": "switch5",
+          "link": "link41"
+        }
+      ],
+      "device34": [
+        {
+          "node": "switch5",
+          "link": "link42"
+        }
+      ],
+      "device35": [
+        {
+          "node": "switch5",
+          "link": "link43"
+        }
+      ],
+      "device36": [
+        {
+          "node": "switch5",
+          "link": "link44"
+        }
+      ],
+      "device37": [
+        {
+          "node": "switch5",
+          "link": "link45"
+        }
+      ],
+      "device38": [
+        {
+          "node": "switch5",
+          "link": "link46"
+        }
+      ],
+      "device39": [
+        {
+          "node": "switch5",
+          "link": "link47"
+        }
+      ],
+      "device40": [
+        {
+          "node": "switch5",
+          "link": "link48"
+        }
+      ],
+      "device41": [
+        {
+          "node": "switch6",
+          "link": "link49"
+        }
+      ],
+      "device42": [
+        {
+          "node": "switch6",
+          "link": "link50"
+        }
+      ],
+      "device43": [
+        {
+          "node": "switch6",
+          "link": "link51"
+        }
+      ],
+      "device44": [
+        {
+          "node": "switch6",
+          "link": "link52"
+        }
+      ],
+      "device45": [
+        {
+          "node": "switch6",
+          "link": "link53"
+        }
+      ],
+      "device46": [
+        {
+          "node": "switch6",
+          "link": "link54"
+        }
+      ],
+      "device47": [
+        {
+          "node": "switch6",
+          "link": "link55"
+        }
+      ],
+      "device48": [
+        {
+          "node": "switch6",
+          "link": "link56"
+        }
+      ],
+      "device49": [
+        {
+          "node": "switch7",
+          "link": "link57"
+        }
+      ],
+      "device50": [
+        {
+          "node": "switch7",
+          "link": "link58"
+        }
+      ],
+      "device51": [
+        {
+          "node": "switch7",
+          "link": "link59"
+        }
+      ],
+      "device52": [
+        {
+          "node": "switch7",
+          "link": "link60"
+        }
+      ],
+      "device53": [
+        {
+          "node": "switch7",
+          "link": "link61"
+        }
+      ],
+      "device54": [
+        {
+          "node": "switch7",
+          "link": "link62"
+        }
+      ],
+      "device55": [
+        {
+          "node": "switch7",
+          "link": "link63"
+        }
+      ],
+      "device56": [
+        {
+          "node": "switch7",
+          "link": "link64"
+        }
+      ],
+      "device57": [
+        {
+          "node": "switch8",
+          "link": "link65"
+        }
+      ],
+      "device58": [
+        {
+          "node": "switch8",
+          "link": "link66"
+        }
+      ],
+      "device59": [
+        {
+          "node": "switch8",
+          "link": "link67"
+        }
+      ],
+      "device60": [
+        {
+          "node": "switch8",
+          "link": "link68"
+        }
+      ],
+      "device61": [
+        {
+          "node": "switch8",
+          "link": "link69"
+        }
+      ],
+      "device62": [
+        {
+          "node": "switch8",
+          "link": "link70"
+        }
+      ],
+      "device63": [
+        {
+          "node": "switch8",
+          "link": "link71"
+        }
+      ],
+      "device64": [
+        {
+          "node": "switch8",
+          "link": "link72"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "group1",
+      "name": "group1",
+      "model": "Qwen14BFP16",
+      "devices": [
+        "device1",
+        "device2",
+        "device3",
+        "device4",
+        "device5",
+        "device6",
+        "device7",
+        "device8",
+        "device9",
+        "device10",
+        "device11",
+        "device12",
+        "device13",
+        "device14",
+        "device15",
+        "device16",
+        "device17",
+        "device18",
+        "device19",
+        "device20",
+        "device21",
+        "device22",
+        "device23",
+        "device24",
+        "device25",
+        "device26",
+        "device27",
+        "device28",
+        "device29",
+        "device30",
+        "device31",
+        "device32",
+        "device33",
+        "device34",
+        "device35",
+        "device36",
+        "device37",
+        "device38",
+        "device39",
+        "device40",
+        "device41",
+        "device42",
+        "device43",
+        "device44",
+        "device45",
+        "device46",
+        "device47",
+        "device48",
+        "device49",
+        "device50",
+        "device51",
+        "device52",
+        "device53",
+        "device54",
+        "device55",
+        "device56",
+        "device57",
+        "device58",
+        "device59",
+        "device60",
+        "device61",
+        "device62",
+        "device63",
+        "device64"
+      ],
+      "controller": "device1",
+      "parallelism": "tp",
+      "split": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "scheduling": "fcfs",
+      "execution": {
+        "pp_rule": "synchronous_cohort"
+      },
+      "color": "#22d3ee"
+    }
+  ],
+  "requests": [
+    {
+      "id": "request1",
+      "instance": "group1",
+      "arrival_s": 0,
+      "input_tokens": 128,
+      "output_tokens": 64,
+      "batch": 1,
+      "microbatch_tokens": 128
+    }
+  ],
+  "parameters": {
+    "baseline_files": {
+      "Q8_0": "../data/parameters/Q8_0.json",
+      "F16": "../data/parameters/F16.json"
+    },
+    "interference_file": "../data/parameters/interference.json",
+    "device_types": {
+      "RPi4": {
+        "source_class": "RPi4"
+      },
+      "RPi5": {
+        "source_class": "RPi5"
+      },
+      "Orin": {
+        "source_class": "Orin"
+      },
+      "Xavier": {
+        "source_class": "Xavier"
+      }
+    },
+    "device_overrides": {},
+    "link_types": {
+      "access_1g": {
+        "baseline_ref": "uplink",
+        "service_ref": "uplink",
+        "parameters": {
+          "Q8_0": {
+            "b_s_per_GB": 8.0
+          },
+          "F16": {
+            "b_s_per_GB": 8.0
+          }
+        },
+        "service_parameters": {
+          "b_s_per_GB": 8.0
+        }
+      },
+      "uplink": {
+        "baseline_ref": "uplink",
+        "service_ref": "uplink",
+        "parameters": {
+          "Q8_0": {
+            "b_s_per_GB": 8.0
+          },
+          "F16": {
+            "b_s_per_GB": 8.0
+          }
+        },
+        "service_parameters": {
+          "b_s_per_GB": 8.0
+        }
+      }
+    },
+    "link_overrides": {},
+    "shared_links": "auto"
+  },
+  "logging_level": "off"
+}

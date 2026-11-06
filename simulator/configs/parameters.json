@@ -1,0 +1,64 @@
+{
+  "baseline_files": {
+    "Q8_0": "../data/parameters/Q8_0.json",
+    "F16": "../data/parameters/F16.json"
+  },
+  "interference_file": "../data/parameters/interference.json",
+  "device_types": {
+    "RPi4": {
+      "source_class": "RPi4"
+    },
+    "RPi5": {
+      "source_class": "RPi5"
+    },
+    "Orin": {
+      "source_class": "Orin"
+    },
+    "Xavier": {
+      "source_class": "Xavier"
+    }
+  },
+  "device_overrides": {},
+  "link_types": {
+    "ethernet": {
+      "baseline_ref": "uplink",
+      "service_ref": "uplink"
+    }
+  },
+  "link_overrides": {
+    "O1": {
+      "baseline_ref": "O1"
+    },
+    "O2": {
+      "baseline_ref": "O2"
+    },
+    "P1": {
+      "baseline_ref": "P1"
+    },
+    "P2": {
+      "baseline_ref": "P2"
+    },
+    "P3": {
+      "baseline_ref": "P3"
+    },
+    "P4": {
+      "baseline_ref": "P4"
+    },
+    "X": {
+      "baseline_ref": "X"
+    },
+    "R1": {
+      "baseline_ref": "R1"
+    },
+    "R3": {
+      "baseline_ref": "R3"
+    },
+    "R4": {
+      "baseline_ref": "R4"
+    },
+    "uplink": {
+      "baseline_ref": "uplink"
+    }
+  },
+  "shared_links": "auto"
+}
