@@ -1,0 +1,496 @@
+{
+  "schema": 1,
+  "name": "case_F_F",
+  "topology": {
+    "nodes": {
+      "s0": {
+        "kind": "switch",
+        "name": "Site 0",
+        "position": {
+          "x": 270,
+          "y": 110
+        }
+      },
+      "s1": {
+        "kind": "switch",
+        "name": "Site 1",
+        "position": {
+          "x": 650,
+          "y": 110
+        }
+      },
+      "s2": {
+        "kind": "switch",
+        "name": "Site 2",
+        "position": {
+          "x": 270,
+          "y": 300
+        }
+      },
+      "s3": {
+        "kind": "switch",
+        "name": "Site 3",
+        "position": {
+          "x": 650,
+          "y": 300
+        }
+      },
+      "d0": {
+        "kind": "device",
+        "name": "d0",
+        "device_type": "Orin",
+        "position": {
+          "x": 100,
+          "y": 65
+        }
+      },
+      "d1": {
+        "kind": "device",
+        "name": "d1",
+        "device_type": "Orin",
+        "position": {
+          "x": 100,
+          "y": 150
+        }
+      },
+      "d2": {
+        "kind": "device",
+        "name": "d2",
+        "device_type": "Orin",
+        "position": {
+          "x": 820,
+          "y": 65
+        }
+      },
+      "d3": {
+        "kind": "device",
+        "name": "d3",
+        "device_type": "Orin",
+        "position": {
+          "x": 820,
+          "y": 150
+        }
+      },
+      "d4": {
+        "kind": "device",
+        "name": "d4",
+        "device_type": "Orin",
+        "position": {
+          "x": 100,
+          "y": 255
+        }
+      },
+      "d5": {
+        "kind": "device",
+        "name": "d5",
+        "device_type": "Orin",
+        "position": {
+          "x": 100,
+          "y": 340
+        }
+      },
+      "d6": {
+        "kind": "device",
+        "name": "d6",
+        "device_type": "Orin",
+        "position": {
+          "x": 820,
+          "y": 255
+        }
+      },
+      "d7": {
+        "kind": "device",
+        "name": "d7",
+        "device_type": "Orin",
+        "position": {
+          "x": 820,
+          "y": 340
+        }
+      },
+      "hub": {
+        "kind": "router",
+        "name": "Hub",
+        "position": {
+          "x": 460,
+          "y": 205
+        }
+      }
+    },
+    "links": {
+      "d0_s0": {
+        "endpoints": [
+          "d0",
+          "s0"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      },
+      "d1_s0": {
+        "endpoints": [
+          "d1",
+          "s0"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      },
+      "d2_s1": {
+        "endpoints": [
+          "d2",
+          "s1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      },
+      "d3_s1": {
+        "endpoints": [
+          "d3",
+          "s1"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      },
+      "d4_s2": {
+        "endpoints": [
+          "d4",
+          "s2"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      },
+      "d5_s2": {
+        "endpoints": [
+          "d5",
+          "s2"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      },
+      "d6_s3": {
+        "endpoints": [
+          "d6",
+          "s3"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      },
+      "d7_s3": {
+        "endpoints": [
+          "d7",
+          "s3"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      },
+      "s0_hub": {
+        "endpoints": [
+          "s0",
+          "hub"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      },
+      "s1_hub": {
+        "endpoints": [
+          "s1",
+          "hub"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      },
+      "s2_hub": {
+        "endpoints": [
+          "s2",
+          "hub"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      },
+      "s3_hub": {
+        "endpoints": [
+          "s3",
+          "hub"
+        ],
+        "duplex": "full",
+        "parameter_profile": "fabric"
+      }
+    },
+    "adjacency": {
+      "s0": [
+        {
+          "node": "d0",
+          "link": "d0_s0"
+        },
+        {
+          "node": "d1",
+          "link": "d1_s0"
+        },
+        {
+          "node": "hub",
+          "link": "s0_hub"
+        }
+      ],
+      "s1": [
+        {
+          "node": "d2",
+          "link": "d2_s1"
+        },
+        {
+          "node": "d3",
+          "link": "d3_s1"
+        },
+        {
+          "node": "hub",
+          "link": "s1_hub"
+        }
+      ],
+      "s2": [
+        {
+          "node": "d4",
+          "link": "d4_s2"
+        },
+        {
+          "node": "d5",
+          "link": "d5_s2"
+        },
+        {
+          "node": "hub",
+          "link": "s2_hub"
+        }
+      ],
+      "s3": [
+        {
+          "node": "d6",
+          "link": "d6_s3"
+        },
+        {
+          "node": "d7",
+          "link": "d7_s3"
+        },
+        {
+          "node": "hub",
+          "link": "s3_hub"
+        }
+      ],
+      "d0": [
+        {
+          "node": "s0",
+          "link": "d0_s0"
+        }
+      ],
+      "d1": [
+        {
+          "node": "s0",
+          "link": "d1_s0"
+        }
+      ],
+      "d2": [
+        {
+          "node": "s1",
+          "link": "d2_s1"
+        }
+      ],
+      "d3": [
+        {
+          "node": "s1",
+          "link": "d3_s1"
+        }
+      ],
+      "d4": [
+        {
+          "node": "s2",
+          "link": "d4_s2"
+        }
+      ],
+      "d5": [
+        {
+          "node": "s2",
+          "link": "d5_s2"
+        }
+      ],
+      "d6": [
+        {
+          "node": "s3",
+          "link": "d6_s3"
+        }
+      ],
+      "d7": [
+        {
+          "node": "s3",
+          "link": "d7_s3"
+        }
+      ],
+      "hub": [
+        {
+          "node": "s0",
+          "link": "s0_hub"
+        },
+        {
+          "node": "s1",
+          "link": "s1_hub"
+        },
+        {
+          "node": "s2",
+          "link": "s2_hub"
+        },
+        {
+          "node": "s3",
+          "link": "s3_hub"
+        }
+      ]
+    }
+  },
+  "parameters": {
+    "baseline_files": {
+      "Q8_0": "../data/parameters/Q8_0.json",
+      "F16": "../data/parameters/F16.json"
+    },
+    "interference_file": "../data/parameters/interference.json",
+    "device_types": {
+      "RPi4": {
+        "source_class": "RPi4"
+      },
+      "RPi5": {
+        "source_class": "RPi5"
+      },
+      "Orin": {
+        "source_class": "Orin"
+      },
+      "Xavier": {
+        "source_class": "Xavier"
+      }
+    },
+    "device_overrides": {
+      "d0": {
+        "parameters": {
+          "Q8_0": {
+            "x": 9.319437198147156e-05,
+            "y": 0.014124342512309845,
+            "graph_dispatch_ms": 0.0762207126945176
+          }
+        }
+      },
+      "d1": {
+        "parameters": {
+          "Q8_0": {
+            "x": 9.319437198147156e-05,
+            "y": 0.014124342512309845,
+            "graph_dispatch_ms": 0.0762207126945176
+          }
+        }
+      },
+      "d2": {
+        "parameters": {
+          "Q8_0": {
+            "x": 6.212958132098105e-05,
+            "y": 0.009416228341539898,
+            "graph_dispatch_ms": 0.050813808463011735
+          }
+        }
+      },
+      "d3": {
+        "parameters": {
+          "Q8_0": {
+            "x": 6.212958132098105e-05,
+            "y": 0.009416228341539898,
+            "graph_dispatch_ms": 0.050813808463011735
+          }
+        }
+      },
+      "d4": {
+        "parameters": {
+          "Q8_0": {
+            "x": 4.659718599073578e-05,
+            "y": 0.007062171256154923,
+            "graph_dispatch_ms": 0.0381103563472588
+          }
+        }
+      },
+      "d5": {
+        "parameters": {
+          "Q8_0": {
+            "x": 4.659718599073578e-05,
+            "y": 0.007062171256154923,
+            "graph_dispatch_ms": 0.0381103563472588
+          }
+        }
+      },
+      "d6": {
+        "parameters": {
+          "Q8_0": {
+            "x": 6.212958132098105e-05,
+            "y": 0.009416228341539898,
+            "graph_dispatch_ms": 0.050813808463011735
+          }
+        }
+      },
+      "d7": {
+        "parameters": {
+          "Q8_0": {
+            "x": 6.212958132098105e-05,
+            "y": 0.009416228341539898,
+            "graph_dispatch_ms": 0.050813808463011735
+          }
+        }
+      }
+    },
+    "link_types": {
+      "fabric": {
+        "baseline_ref": "uplink",
+        "service_ref": "uplink",
+        "parameters": {
+          "Q8_0": {
+            "alpha_ms": 2.0,
+            "b_s_per_GB": 800.0
+          },
+          "F16": {
+            "alpha_ms": 2.0,
+            "b_s_per_GB": 800.0
+          }
+        },
+        "service_parameters": {
+          "b_s_per_GB": 800.0
+        }
+      }
+    },
+    "link_overrides": {},
+    "shared_links": "auto"
+  },
+  "groups": [
+    {
+      "id": "G0",
+      "name": "G0",
+      "model": "Qwen8BQ8",
+      "devices": [
+        "d5",
+        "d4"
+      ],
+      "controller": "d4",
+      "parallelism": "pp",
+      "split": [
+        0.6351351351351351,
+        0.3648648648648649
+      ],
+      "scheduling": "fcfs",
+      "execution": {
+        "collective_policy": "native_mpi",
+        "pp_rule": "synchronous_cohort"
+      },
+      "pp_layer_counts": [
+        24,
+        13
+      ],
+      "color": "#22d3ee"
+    }
+  ],
+  "requests": [
+    {
+      "id": "r000",
+      "instance": "G0",
+      "arrival_s": 0.0,
+      "input_tokens": 128,
+      "output_tokens": 32,
+      "batch": 1,
+      "microbatch_tokens": 128
+    }
+  ]
+}

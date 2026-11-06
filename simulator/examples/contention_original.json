@@ -1,0 +1,351 @@
+{
+  "topology": {
+    "nodes": {
+      "router": {
+        "kind": "router",
+        "position": {
+          "x": 330,
+          "y": 205
+        }
+      },
+      "switch": {
+        "kind": "switch",
+        "position": {
+          "x": 590,
+          "y": 205
+        }
+      },
+      "O1": {
+        "kind": "device",
+        "device_type": "Orin",
+        "parameter_profile": "Orin",
+        "position": {
+          "x": 130,
+          "y": 65
+        }
+      },
+      "O2": {
+        "kind": "device",
+        "device_type": "Orin",
+        "parameter_profile": "Orin",
+        "position": {
+          "x": 130,
+          "y": 205
+        }
+      },
+      "X": {
+        "kind": "device",
+        "device_type": "Xavier",
+        "parameter_profile": "Xavier",
+        "position": {
+          "x": 790,
+          "y": 65
+        }
+      },
+      "P1": {
+        "kind": "device",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 790,
+          "y": 205
+        }
+      },
+      "P2": {
+        "kind": "device",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 790,
+          "y": 345
+        }
+      },
+      "P3": {
+        "kind": "device",
+        "device_type": "RPi5",
+        "parameter_profile": "RPi5",
+        "position": {
+          "x": 130,
+          "y": 345
+        }
+      }
+    },
+    "links": {
+      "O1": {
+        "endpoints": [
+          "O1",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "ethernet"
+      },
+      "O2": {
+        "endpoints": [
+          "O2",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "ethernet"
+      },
+      "P3": {
+        "endpoints": [
+          "P3",
+          "router"
+        ],
+        "duplex": "full",
+        "parameter_profile": "ethernet"
+      },
+      "X": {
+        "endpoints": [
+          "X",
+          "switch"
+        ],
+        "duplex": "full",
+        "parameter_profile": "ethernet"
+      },
+      "P1": {
+        "endpoints": [
+          "P1",
+          "switch"
+        ],
+        "duplex": "full",
+        "parameter_profile": "ethernet"
+      },
+      "P2": {
+        "endpoints": [
+          "P2",
+          "switch"
+        ],
+        "duplex": "full",
+        "parameter_profile": "ethernet"
+      },
+      "uplink": {
+        "endpoints": [
+          "router",
+          "switch"
+        ],
+        "duplex": "full",
+        "parameter_profile": "ethernet"
+      }
+    },
+    "adjacency": {
+      "router": [
+        {
+          "node": "O1",
+          "link": "O1"
+        },
+        {
+          "node": "O2",
+          "link": "O2"
+        },
+        {
+          "node": "P3",
+          "link": "P3"
+        },
+        {
+          "node": "switch",
+          "link": "uplink"
+        }
+      ],
+      "switch": [
+        {
+          "node": "X",
+          "link": "X"
+        },
+        {
+          "node": "P1",
+          "link": "P1"
+        },
+        {
+          "node": "P2",
+          "link": "P2"
+        },
+        {
+          "node": "router",
+          "link": "uplink"
+        }
+      ],
+      "O1": [
+        {
+          "node": "router",
+          "link": "O1"
+        }
+      ],
+      "O2": [
+        {
+          "node": "router",
+          "link": "O2"
+        }
+      ],
+      "X": [
+        {
+          "node": "switch",
+          "link": "X"
+        }
+      ],
+      "P1": [
+        {
+          "node": "switch",
+          "link": "P1"
+        }
+      ],
+      "P2": [
+        {
+          "node": "switch",
+          "link": "P2"
+        }
+      ],
+      "P3": [
+        {
+          "node": "router",
+          "link": "P3"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "Qwen4BQ8",
+      "model": "Qwen4BQ8",
+      "devices": [
+        "P1",
+        "P3"
+      ],
+      "controller": "P1",
+      "parallelism": "tp",
+      "split": [
+        0.5,
+        0.5
+      ],
+      "scheduling": "fcfs",
+      "execution": {
+        "pp_rule": "synchronous_cohort",
+        "collective_policy": "nccl_hierarchical"
+      },
+      "color": "#22d3ee"
+    },
+    {
+      "id": "Qwen4BFP16",
+      "model": "Qwen4BFP16",
+      "devices": [
+        "O2",
+        "X"
+      ],
+      "controller": "O2",
+      "parallelism": "tp",
+      "split": [
+        0.5,
+        0.5
+      ],
+      "scheduling": "fcfs",
+      "execution": {
+        "pp_rule": "synchronous_cohort",
+        "collective_policy": "nccl_hierarchical"
+      },
+      "color": "#fb923c"
+    },
+    {
+      "id": "Qwen8BQ8",
+      "model": "Qwen8BQ8",
+      "devices": [
+        "O1",
+        "P2"
+      ],
+      "controller": "O1",
+      "parallelism": "tp",
+      "split": [
+        0.75,
+        0.25
+      ],
+      "scheduling": "fcfs",
+      "execution": {
+        "pp_rule": "synchronous_cohort",
+        "collective_policy": "nccl_hierarchical"
+      },
+      "color": "#c084fc"
+    }
+  ],
+  "requests": [
+    {
+      "id": "Qwen4BQ8_0",
+      "instance": "Qwen4BQ8",
+      "arrival_s": 0.0,
+      "input_tokens": 32,
+      "output_tokens": 32,
+      "batch": 1,
+      "microbatch_tokens": 32
+    },
+    {
+      "id": "Qwen4BFP16_0",
+      "instance": "Qwen4BFP16",
+      "arrival_s": 0.0,
+      "input_tokens": 32,
+      "output_tokens": 32,
+      "batch": 32,
+      "microbatch_tokens": 128
+    },
+    {
+      "id": "Qwen8BQ8_0",
+      "instance": "Qwen8BQ8",
+      "arrival_s": 0.0,
+      "input_tokens": 32,
+      "output_tokens": 32,
+      "batch": 8,
+      "microbatch_tokens": 128
+    }
+  ],
+  "schema": 1,
+  "name": "contention_original",
+  "parameters": {
+    "baseline_files": {
+      "Q8_0": "../data/parameters/Q8_0.json",
+      "F16": "../data/parameters/F16.json"
+    },
+    "interference_file": "../data/parameters/interference.json",
+    "device_types": {
+      "RPi4": {
+        "source_class": "RPi4"
+      },
+      "RPi5": {
+        "source_class": "RPi5"
+      },
+      "Orin": {
+        "source_class": "Orin"
+      },
+      "Xavier": {
+        "source_class": "Xavier"
+      }
+    },
+    "device_overrides": {},
+    "link_types": {
+      "ethernet": {
+        "baseline_ref": "uplink",
+        "service_ref": "uplink"
+      }
+    },
+    "link_overrides": {
+      "O1": {
+        "baseline_ref": "O1"
+      },
+      "O2": {
+        "baseline_ref": "O2"
+      },
+      "P1": {
+        "baseline_ref": "P1"
+      },
+      "P2": {
+        "baseline_ref": "P2"
+      },
+      "P3": {
+        "baseline_ref": "P4"
+      },
+      "X": {
+        "baseline_ref": "X"
+      },
+      "uplink": {
+        "baseline_ref": "uplink"
+      }
+    },
+    "shared_links": "auto"
+  }
+}

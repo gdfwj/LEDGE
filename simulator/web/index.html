@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LEDGE</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header>
+  <div><strong><span class="logo">◈</span> LEDGE</strong><span class="pill">Simulation</span></div>
+  <div class="actions"><select id="examples" aria-label="Example experiment"></select><button id="loadExample">Load example</button><button id="importInput">Import configuration</button><button id="exportInput">Export configuration</button></div>
+</header>
+<main>
+<section class="topbar"><h1>Experiment</h1><div class="actions"><button id="paramsBtn">Parameters</button><button id="validateBtn">Validate configuration</button></div></section>
+<div id="status" role="status">Loading…</div>
+<section class="panel" id="executionPanel">
+  <div class="panelhead"><h2>Run</h2><div class="actions run-tools"><button id="historyBtn">History</button></div></div>
+  <div class="run-controls">
+    <label>Logging <select id="loggingLevel"><option value="trace">Detailed</option><option value="off">Summary</option></select></label>
+    <div class="run-submit"><button id="executionStart" class="primary">Run simulation</button><button id="executionCancel" hidden disabled>Cancel run</button></div>
+  </div>
+  <div class="run-status"><p id="executionStatus" role="status"></p><button id="runDetailsBtn" class="text-button" hidden>Details</button></div>
+</section>
+<section class="metrics" id="metricsPanel" hidden>
+  <div><label>Mean service time</label><strong id="meanService">—</strong><span>Start → completion</span></div>
+  <div><label>Mean response time</label><strong id="meanResponse">—</strong><span>Arrival → completion</span></div>
+  <div><label>Mean TTFT</label><strong id="meanTTFT">—</strong><span>Arrival → first token</span></div>
+  <div><label>Mean TPOT</label><strong id="meanTPOT">—</strong><span id="tpotCount">Between output tokens</span></div>
+  <div><label>Run summary</label><strong id="requestCount">—</strong><span id="runDuration"></span></div>
+  <div><label>Statistics scope</label><select id="statsScope"><option value="">All requests</option></select></div>
+</section>
+<div id="configurationEditor">
+<div class="workspace">
+  <section class="panel topologyPanel"><div class="panelhead"><h2>01 <span>Network topology</span></h2><div class="actions"><select id="nodeKind" aria-label="New node type"><option value="device">Device</option><option value="router">Router</option><option value="switch">Switch</option></select><button id="addNode">+ Node</button><button id="connectNodes">Connect</button><button id="deleteSelection">Delete</button><button id="createGroup">Create instance</button></div></div><p class="hint">Drag to move. Ctrl / ⌘ click to select multiple nodes.</p><svg id="topology" viewBox="0 0 920 410" aria-label="Interactive network topology canvas"></svg><div id="topologyLegend" class="legend"></div></section>
+  <aside class="panel"><div class="panelhead"><h2>Inspector</h2><span id="selectionLabel"></span></div><div id="inspector"><p class="empty">Select a node or link to edit.</p></div></aside>
+</div>
+<section class="panel"><div class="panelhead"><h2>02 <span>Model deployment</span></h2><button id="addGroup">+ Model instance</button></div><div id="groups"></div></section>
+<section class="panel"><div class="panelhead"><h2>03 <span>Requests</span></h2><div class="actions"><button id="addRequest">+ Request</button><button id="importRequests">Import requests</button><button id="exportRequests">Export CSV</button></div></div>
+  <div class="tablewrap"><table><thead><tr><th>Request ID</th><th>Instance</th><th>Arrival / s</th><th>Input tokens</th><th>Output tokens</th><th title="Sequences served together in this request">Batch</th><th title="Tokens processed per prefill microbatch">Microbatch U</th><th></th></tr></thead><tbody id="requestInputs"></tbody></table></div><div id="arrivalTimeline" class="arrivalTimeline"></div>
+</section>
+</div>
+<section class="panel playback">
+  <div class="panelhead"><h2>04 <span>Results</span></h2><div class="actions">
+    <button id="importResults">Import results</button><button id="pasteResults">Paste JSON</button>
+    <select id="exportFormat" aria-label="Result export format"><option value="run">Full run JSON</option><option value="results">Metrics JSON</option><option value="csv">Request CSV</option><option value="resolved">Resolved configuration</option></select><button id="exportResults" disabled>Export</button>
+  </div></div>
+  <p id="resultsEmpty" class="empty">Run an experiment or import results.</p>
+  <div id="resultVisuals" hidden>
+    <p id="traceHint" class="hint" hidden>Choose Detailed logging to record a timeline.</p>
+    <div id="traceContent" hidden>
+      <div class="playcontrols"><button id="prevEvent" title="Previous event">◀│</button><button id="play">Play</button><button id="nextEvent" title="Next event">│▶</button><select id="speed" aria-label="Playback speed"><option value="0.25">0.25×</option><option value="1" selected>1×</option><option value="5">5×</option><option value="20">20×</option></select><input id="scrubber" aria-label="Replay time" type="range" min="0" max="1" step="0.0001" value="0"><output id="clock">0.000 s</output></div>
+      <div class="filters"><label>Request<select id="filterRequest"><option value="">All</option></select></label><label>Instance<select id="filterInstance"><option value="">All</option></select></label><label>Device<select id="filterDevice"><option value="">All</option></select></label><label>Link<select id="filterLink"><option value="">All</option></select></label><label>Zoom<select id="zoom"><option value="1">Full run</option><option value="4">4×</option><option value="16">16×</option><option value="64">64×</option></select></label><span id="completedNow"></span></div>
+      <div class="legend"><span><i style="background:#22d3ee"></i>Compute</span><span><i style="background:#8b5cf6"></i>Communication</span><span><i style="background:#f59e0b"></i>Waiting</span><span><i style="background:#64748b"></i>Path / receiver delay</span></div>
+      <div class="replayState"><svg id="replayTopology" viewBox="0 0 920 410" aria-label="Topology state during replay"></svg><div id="liveState" class="liveState"></div></div>
+      <div id="timelineWrap"><canvas id="executionTimeline" aria-label="Execution timeline"></canvas></div><div id="eventDetails" class="detail">Select an interval for details.</div>
+    </div>
+    <h3>Request milestones <small>Arrival · start · first token · completion</small></h3><div id="requestTimeline"></div>
+    <div class="tablewrap"><table><thead><tr><th>Request</th><th>State / tokens</th><th>Arrival</th><th>Start</th><th>First token</th><th>Completion</th><th>Queue</th><th>Service</th><th>Response / TTFT</th><th>TPOT</th></tr></thead><tbody id="results"></tbody></table></div>
+  </div>
+</section>
+</main>
+<dialog id="historyDialog" class="wide-dialog">
+  <div class="dialoghead"><h2>Run history</h2><button class="close-dialog" data-close="historyDialog" aria-label="Close run history">×</button></div>
+  <div class="actions"><select id="runHistory" aria-label="Run history"><option value="">No saved runs</option></select><button id="refreshRuns">Refresh</button><button id="compareRun" disabled>Add to comparison</button></div><div id="runComparison"></div>
+</dialog>
+<dialog id="runDetailsDialog" class="wide-dialog">
+  <div class="dialoghead"><h2 id="runDetailsTitle">Run details</h2><button class="close-dialog" data-close="runDetailsDialog" aria-label="Close details">×</button></div><pre id="executionDetail" class="code-view"></pre>
+</dialog>
+<dialog id="paramsDialog"><h2>Parameters</h2><p class="hint">Paths are relative to simulator/.</p><textarea id="paramsText" spellcheck="false"></textarea><div class="actions"><button id="saveParamsFile">Export</button><button id="cancelParams">Cancel</button><button id="applyParams" class="primary">Apply</button></div></dialog>
+<dialog id="logDialog"><h2>Import results</h2><textarea id="logText" aria-label="Result JSON" spellcheck="false"></textarea><div class="actions"><button id="cancelLogImport">Cancel</button><button id="applyLogImport">Import</button></div></dialog>
+<input id="fileInput" type="file" hidden><script src="app.js"></script><script src="runs.js"></script>
+</body></html>
