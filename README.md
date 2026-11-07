@@ -22,9 +22,9 @@ GUI runs are stored in `data/runs/`. Press Ctrl+C in the terminal to stop the se
 ## Demo
 
 <p align="center">
-  <video src="media/ledge-demo.mp4" controls width="640" height="360" poster="media/ledge-demo-preview.jpg" title="LEDGE demo (1:58)">
+  <video src="media/ledge-demo.mp4" controls width="960" height="540" poster="media/ledge-demo-preview.jpg" title="LEDGE demo (1:58)">
     <a href="media/ledge-demo.mp4">
-      <img src="media/ledge-demo-preview.jpg" width="640" alt="Watch the LEDGE demo (1:58)">
+      <img src="media/ledge-demo-preview.jpg" width="960" alt="Watch the LEDGE demo (1:58)">
     </a>
   </video>
 </p>
