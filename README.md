@@ -21,9 +21,13 @@ GUI runs are stored in `data/runs/`. Press Ctrl+C in the terminal to stop the se
 
 ## Demo
 
-**[▶ Watch the demo (1:58)](media/ledge-demo.mp4)**
-
-[![LEDGE demo: three model instances running over a shared network](media/ledge-demo-preview.jpg)](media/ledge-demo.mp4)
+<p align="center">
+  <video src="media/ledge-demo.mp4" controls width="640" height="360" poster="media/ledge-demo-preview.jpg" title="LEDGE demo (1:58)">
+    <a href="media/ledge-demo.mp4">
+      <img src="media/ledge-demo-preview.jpg" width="640" alt="Watch the LEDGE demo (1:58)">
+    </a>
+  </video>
+</p>
 
 Edit devices, model instances, and requests; run three instances; inspect metrics and timelines; replay execution and export results. The video includes English captions and has no audio.
 
