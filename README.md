@@ -2,6 +2,8 @@
 
 LEDGE simulates distributed LLM inference from a network topology, model deployments, and a request stream.
 
+[Demo](#demo) · [GUI guide](#gui-guide) · [CLI](#cli) · [Paper examples](#paper-examples)
+
 ## Quick Start
 
 Requires Python 3.10+ and NumPy. Run these commands from this directory:
@@ -16,6 +18,14 @@ python -m simulator serve --port 8765
 Open <http://127.0.0.1:8765>. The server listens on the local machine. The included parameters are ready to use; model weights and device connections are not required.
 
 GUI runs are stored in `data/runs/`. Press Ctrl+C in the terminal to stop the server.
+
+## Demo
+
+**[▶ Watch the demo (1:58)](media/ledge-demo.mp4)**
+
+[![LEDGE demo: three model instances running over a shared network](media/ledge-demo-preview.jpg)](media/ledge-demo.mp4)
+
+Edit devices, model instances, and requests; run three instances; inspect metrics and timelines; replay execution and export results. The video includes English captions and has no audio.
 
 ## GUI guide
 
@@ -33,6 +43,16 @@ Click **Validate configuration**, choose **Summary** or **Detailed** logging, an
 Results show request latency, TTFT, TPOT, token timestamps, and request milestones. Detailed logging adds a filterable event timeline and topology replay; **History** reopens saved runs and compares their metrics.
 
 Import saved result JSON, or export a full run, metrics JSON, request CSV, or resolved configuration. Full run JSON and CLI result JSON can be reimported for replay.
+
+## CLI
+
+Run an example and save its results:
+
+```sh
+python -m simulator run simulator/examples/case_H_H.json --output result.json
+```
+
+See [CLI_README.md](CLI_README.md) for all options, logging modes, CSV export, batch runs, and output schemas.
 
 ## Paper examples
 
@@ -90,16 +110,6 @@ Files are named `case_<environment>_<deployment>.json`: the first code selects t
 | Monitoring | [case_M_H](simulator/examples/case_M_H.json) | [case_M_O](simulator/examples/case_M_O.json) | [case_M_F](simulator/examples/case_M_F.json) | [case_M_M](simulator/examples/case_M_M.json) |
 
 Reference results for the diagonal examples are **8.27 s** E2E (H), **0.0346 requests/s** throughput (O), **6.40 s** E2E (F), and **47/48** requests within the deadline, or **0.610 requests/min** goodput (M). Office throughput is request count divided by the span from first arrival to last completion. Monitoring counts requests with response time at most 1800 s and divides by the fixed 4620 s evaluation window; multiply by 60 for requests/min. These rates can be computed from the exported request results.
-
-## CLI
-
-Run an example and save its results:
-
-```sh
-python -m simulator run simulator/examples/case_H_H.json --output result.json
-```
-
-See [CLI_README.md](CLI_README.md) for all options, logging modes, CSV export, batch runs, and output schemas.
 
 ## Returned values and file formats
 
